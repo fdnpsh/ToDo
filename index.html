@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task-Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="app col-5 col-m-10">
+      <h1>To-Do List</h1>
+      <form id="form">
+        <div class="sorting">
+          <img onclick="sortList()" src="images/down.png" alt="" id="sort">
+        </div>
+        <br></br>
+        <div class="col-10" style="margin:auto">
+          <input id="input" type="text" class="col-12" placeholder="Add task here...">
+        </div>
+        <br><br>
+        
+        
+        <div id="posts" class="col-10"></div>
+        
+        <div id="msg"></div>
+        <button type="submit"><img src="images/add.png" alt="add"></button>
+      </form>
+    </div>
+  </div>
+</body>
+
+<script src="main.js"></script>
+
+</html>
